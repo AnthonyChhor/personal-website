@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.header {
+    color: white;
+    background-color: #1c1d25;
+    height: 100vh;
+    font-size: 40px;
+
+}
+
+section {
+    height: 500px;
+    /*background-color: rgb(255, 255, 255);*/
+    border: solid #f58dd8 1px;
+}
+
+footer {
+    height: 500px;
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+.name-text {
+    margin-left: 80px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: coral;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
