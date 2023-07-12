@@ -1,5 +1,12 @@
+/*MAIN HTML*/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Belanosima', sans-serif;    margin: 0;
+
 }
 
 section {
@@ -11,6 +18,7 @@ section {
     height: 100vh;
     color: white;
     font-size: 40px;
+
 }
 
 footer {
@@ -40,7 +48,12 @@ li {
 h1 {
     font-size: 90px;
     margin: 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFRKpjW_RHN1Bdsmnp6WDGidEdGh6efLwoA&usqp=CAU");
+    color: transparent;
 }
+
 
 h2 {
     font-size: 50px;
@@ -52,9 +65,12 @@ p {
     font-weight: 300;
 }
 
+
 .subtext {
     font-size: 15px;
     font-weight: 300;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .hero-area {
@@ -102,6 +118,18 @@ p {
     margin: 20px;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+
+
+/*ABOUT SECTION*/
+
 .sub-section {
     display: flex;
     justify-content: space-around;
@@ -126,30 +154,111 @@ p {
     align-items: center;
 }
 
-.project-card {
+
+/*PROJECT SECTION*/
+
+
+.project-card1 {
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
 }
+
+.project-card1 {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.project-card2 {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.project-card3 {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.project-card4 {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+    border-radius: 1rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+
+.card-back, .card-front {
+    width: 300px;
+    height: 500px;
+    border-radius: 1rem;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-image: url("img/project1.png");
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
 
 .project-container {
     display: flex;
     justify-content: space-around;
+
 }
 
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+.project-card1:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
 }
 
-.project-image {
-    margin-top: 25px;
-    width: 250px;
-    border-radius: 125px;
+.project-card2:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
 }
+
+.project-card3:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+
+.project-card4:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
 
 hr {
     margin-left: 20px;
@@ -161,17 +270,33 @@ hr {
     color: #ef744b;
 }
 
+.project-image {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/*CONTACT SECTION*/
+
 a {
     text-decoration: none;
     color: white;
 }
 
-.hamburger {
-    display: none;
+/*SKILLS SECTION*/
+.skills {
+    text-align: center;
 }
 
-.hamburger:focus{
-    outline: 0;
+/*MEDIA QUERIES*/
+
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
