@@ -11,6 +11,8 @@ body {
 
 section {
     background-color: #000623;
+    border: none !important;
+    outline: none;
 }
 
 .nav-a:hover {
