@@ -10,11 +10,19 @@ body {
 }
 
 section {
-    background-color: white;
+    background-color: #000623;
+}
+
+.nav-a:hover {
+    color: #ef744b;
+}
+
+.regular-text, .header-text {
+    color: white;
 }
 
 .header {
-    background-color: #1c1d25;
+    background-color: #000623;
     height: 100vh;
     color: white;
     font-size: 40px;
@@ -22,7 +30,7 @@ section {
 }
 
 footer {
-    background-color: black;
+    background-color: #000623;
     color: white;
     text-align: center;
     padding: 80px;
@@ -48,10 +56,7 @@ li {
 h1 {
     font-size: 90px;
     margin: 0;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFRKpjW_RHN1Bdsmnp6WDGidEdGh6efLwoA&usqp=CAU");
-    color: transparent;
+    color: white;
 }
 
 
@@ -71,6 +76,7 @@ p {
     font-weight: 300;
     margin-left: 5px;
     margin-right: 5px;
+    color: white;
 }
 
 .hero-area {
@@ -86,8 +92,8 @@ p {
 }
 
 .button {
-    width: 170px;
-    height: 43px;
+    width: 200px;
+    height: 47px;
     border-radius: 30px;
     background-color: coral;
     text-align: center;
@@ -110,12 +116,17 @@ p {
     padding-bottom: 200px;
 }
 
+.social:hover {
+    fill: #ef744b;
+}
+
 .logo {
     height: 170px;
     margin: 0;
 }
 .social {
     margin: 20px;
+    fill: white;
 }
 
 .hamburger {
@@ -235,6 +246,7 @@ p {
 .project-container {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 
 }
 
@@ -287,7 +299,78 @@ a {
 /*SKILLS SECTION*/
 .skills {
     text-align: center;
+    color: white;
+    margin: 0;
 }
+
+.skills-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-icon {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: none;
+}
+
+/*.skills-icon:hover {*/
+/*    transform: scale(1.1);*/
+/*    box-shadow: 0 0 15px #dcdcdc;*/
+/*    border: none;*/
+/*}*/
+
+.skills-content {
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .6s;
+    color: white;
+}
+
+.skills-content:hover {
+    opacity: 1;
+}
+
+.skills-text {
+    font-size: 15px;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+}
+
+
+
+/*FOOTER SECTION*/
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 /*MEDIA QUERIES*/
 
