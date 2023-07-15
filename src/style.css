@@ -382,6 +382,10 @@ a {
     justify-content: space-around;
 }
 
+.contact-link:hover {
+    color: #ef744b;
+
+}
 
 
 /*MEDIA QUERIES*/
